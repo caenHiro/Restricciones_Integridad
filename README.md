@@ -4,6 +4,7 @@ Repositorio de apoyo para el trabajo de “Implementación de reglas de negocio 
 <strong>
 Para la correcta ejecución de los códigos se debe ejecutar en el siguiente orden:
 </strong>
+ <br />
  Restricciones_Integridad <br />
 | <br />
 |- - - Tablas <br />
@@ -19,9 +20,9 @@ Para la correcta ejecución de los códigos se debe ejecutar en el siguiente ord
 |- - -CargaGeografico.sql        <br />
 |   <br />
 |- - -CargaPartidos.sql        <br />
-|  
+|   <br />
 |- - -CargaCasillas.sql        <br />
-|  
+|   <br />
 |- - - Funciones
 | <br />
 | <br />
