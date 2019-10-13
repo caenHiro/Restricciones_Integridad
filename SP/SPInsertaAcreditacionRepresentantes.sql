@@ -26,7 +26,7 @@ CREATE OR REPLACE FUNCTION INSERTA_ACREDITACION_REPRESENTANTE(ID_RESPONSABLE_ACR
     END LOOP;   
     IF VAR_ID_REPRE_PRE_ACREDITADO IS NULL 
       THEN  
-         RAISE EXCEPTION 'UPS! SE GENERO UN ERROR NO ES POSIBLE ACREDITAR AL REPRESENTANTE . -> %' , $2
+         RAISE EXCEPTION 'UPS! SE GENERO UN ERROR NO ES POSIBLE ACREDITAR AL REPRESENTANTE. -> %' , $2
          USING HINT = 
             'REVISA EL ID_REPRESENTANTE_PRELIMINAR, SE CUMPLA LAS CONDICIONES PARA SER ACREDITADO';
          RETURN 0 ;
@@ -43,7 +43,7 @@ COMMENT ON FUNCTION INSERTA_ACREDITACION_REPRESENTANTE (ID_RESPONSABLE_ACREDITAC
    representante preliminar, para esto, primero se busca en la tabla de representantes_preliminares para saber cuántos 
    representantes preliminares tienen el mismo id_representante_datos, los ordenamos por fecha de registro y vamos viendo de
    esa lista de representantes buscamos cuál es el primero que cumple las condiciones para poder ser acreditado, para esta 
-   validación se ocupa la funcion  CUMPLE_CONDICION_ACREDITACION, una ves que se  encuentra al representante que se puede 
+   validación se ocupa la funcion  cumple_condicion_acreditacion, una ves que se  encuentra al representante que se puede 
    acreditar proseguimos a la inserción de este en la tabla representantes_acreditados, como se puede notar siempre mandamos
    el mismo id_representante_pre con el valor 1, esto es debido a que tenemos un trigger encargado de colocar el valor
    correspondiente al identificador antes de la inserción.';

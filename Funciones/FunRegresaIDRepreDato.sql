@@ -11,8 +11,8 @@ DECLARE
 	IF ID_REPRE_DATO IS NOT NULL THEN 
 	RETURN ID_REPRE_DATO;
 	ELSE 
-	RAISE EXCEPTION 'Ups! se genero un error al ya que no se ecuentra la clave de elector. -> %' , $1 
-	USING HINT = 'Revisa que la clave de elector si exista.';
+	RAISE EXCEPTION 'UPS! SE GENERO UN ERROR AL YA QUE NO SE ECUENTRA LA CLAVE DE ELECTOR. -> %' , $1 
+	USING HINT = 'REVISA QUE LA CLAVE DE ELECTOR SI EXISTA.';
 	END IF;
 	END;
     $$ LANGUAGE PLPGSQL;

@@ -15,4 +15,4 @@ DECLARE
     $$ LANGUAGE PLPGSQL;
 
 COMMENT ON FUNCTION GENERA_ID_REPRE_PRE(   )  IS
-	'Función encargada de Regresar el valor del identificador único de la tabla representante_pre.'; 
+	'Función encargada de regresar el valor del identificador único de la tabla representante_pre.'; 

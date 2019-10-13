@@ -23,8 +23,8 @@ RETURNS BOOLEAN  AS $$
 	 	 		 RETURN (VAR_REPRESENTANTES_GENERALES.ID_ESTADO = VAR_REPRESENTANTES_GENERALES_ACREDITADOS.ID_ESTADO) AND	
 	 	 		 (VAR_REPRESENTANTES_GENERALES.ID_DISTRITO_FEDERAL = VAR_REPRESENTANTES_GENERALES_ACREDITADOS.ID_DISTRITO_FEDERAL); 
 	 	 	ELSE 
-	 	 	  RAISE EXCEPTION 'UPS! NO SE ENCUENTRA EL ID_REPRESENTANTE_PRE QUE DESEAS SUSTITUIR' 
-			  USING HINT = 'REVISA QUE TU ID_REPRESENTANTE_PRE QUE DESEAS SUSTITUIR';
+	 	 	  RAISE EXCEPTION 'UPS! NO SE ENCUENTRA EL ID_REPRESENTANTE_PRE QUE DESEAS SUSTITUIR.' 
+			  USING HINT = 'REVISA QUE TU ID_REPRESENTANTE_PRE QUE DESEAS SUSTITUIR EXISTA.';
 			  RETURN  FALSE;
 	 	 	END IF;
 	 	ELSE
@@ -48,4 +48,4 @@ RETURNS BOOLEAN  AS $$
 COMMENT ON FUNCTION CUMPLE_CONDICION_SUSTITUCION(  NUMERIC(10,0),   NUMERIC(10,0)  )  IS
 	'Función encargada de validar si un representante aprobado puede ser sustituido por un representnate preliminar, valida que sea del
 	 mismo tipo de representante,que sean generales los 2 o que sean ante casilla los 2, por ultimo valida que tengan asiganados los
-	  mismos valores para el estado, distrito , casilla , calidad y seccion.'; 
+	  mismos valores para el estado, distrito, casilla, calidad y sección.'; 

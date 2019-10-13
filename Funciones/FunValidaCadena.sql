@@ -17,11 +17,11 @@ RETURNS BOOLEAN  AS $$
 	END IF;
 	ELSE
 	 RAISE EXCEPTION 'UPS! SE GENERO UN ERROR AL VALIDAR LA CADENA. -> %' , $1 
-	 USING HINT = 'SUPERO LA LONGITUD DE 50 CARACTERES, INTENTA CON UNA PALABRA MAS CORTA';
+	 USING HINT = 'SUPERO LA LONGITUD DE 50 CARACTERES, INTENTA CON UNA PALABRA MAS CORTA.';
 	END IF;
     END;
     $$ LANGUAGE PLPGSQL;
 
 COMMENT ON FUNCTION IS_CADENA( VARCHAR(50) ) IS
-	'Función encargada de validar que las cadenas que se evalúa sea una cadenas
-	 válida, es decir,  que no contengan números o  caracteres extras al principio, enmedio o al final de la cadena.';
+	' Función encargada de validar que las cadenas que se evalúa sea una cadenas
+	 válidaa, es decir, que no contengan números o caracteres extras al principio, en medio o al final de la cadena.';

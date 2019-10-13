@@ -22,5 +22,5 @@ CREATE OR REPLACE FUNCTION ELIMINA_REPRESENTANTE_PRELIMINAR (ID_REPRE_PRELIMINAR
 COMMENT ON FUNCTION  ELIMINA_REPRESENTANTE_PRELIMINAR (ID_REPRE_PRELIMINAR_IN NUMERIC(10,0) )  IS 
 'Procedimiento para eliminar un representantes preliminar, primero se busca en la tabla de representantes_pre 
 si existe el identificador del representante que se desea eliminar, si  se encuentra en la tabla lo eliminar,
- en cualquier otro caso manda una excepcion. nota la eliminación se hace en CASCADA, es decir se  eliminar 
+ en cualquier otro caso manda una excepcion. nota la eliminación se hace en cascada, es decir se  eliminar 
  todas las referencias asociadas a este identificador.';
