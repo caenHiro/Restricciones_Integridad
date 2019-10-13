@@ -81,14 +81,14 @@ Para la correcta ejecución de los códigos se debe ejecutar en el siguiente ord
 |  <br />
 | <br />
 | <br />
-|- - -PruebaInsertaAcreditaciones.sql        <br />
-|  <br />
-|- - -PruebaInsertaAsistenciaCasillas.sql        <br />
-|  <br />
 |- - -PruebaInsertaRepresentantesPreliminaresCasillas.sql        <br />
 |  <br />
 |- - -PruebaInsertaRepresentnatesPreliminaresGenerales.sql        <br />
 |  <br />
 |- - -PruebaInsertaResponsableAcreditacion.sql        <br />
+|  <br />
+|- - -PruebaInsertaAcreditaciones.sql        <br />
+|  <br />
+|- - -PruebaInsertaAsistenciaCasillas.sql        <br />
 |  <br />
 |- - -PruebaInsertaSustitucionesReprentantes.sql        <br />

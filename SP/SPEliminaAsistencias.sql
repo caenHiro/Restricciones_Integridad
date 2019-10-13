@@ -42,7 +42,7 @@ DROP FUNCTION ELIMINA_ASISTENCIAS_REPRESENTANTES (ID_REPRE_PRELIMINAR_IN NUMERIC
       END; 
   $$ LANGUAGE PLPGSQL;
 
-COMMENT ON FUNCTION ON FUNCTION ELIMINA_ASISTENCIAS_REPRESENTANTES (ID_REPRE_PRELIMINAR_IN NUMERIC(10,0) , ID_ESTADO_IN  DECIMAL(2,0) , ID_DISTRITO_FEDERAL_IN NUMERIC(2,0) , 
+COMMENT ON FUNCTION ELIMINA_ASISTENCIAS_REPRESENTANTES (ID_REPRE_PRELIMINAR_IN NUMERIC(10,0) , ID_ESTADO_IN  DECIMAL(2,0) , ID_DISTRITO_FEDERAL_IN NUMERIC(2,0) , 
   SECCION_IN NUMERIC(5,0) ,   TIPO_CASILLA_IN VARCHAR(6) ,  TIPO_FIRMA_IN VARCHAR(1) )  IS 
 'Procedimiento para eliminar una asistencia asiganada del representantes acreditado,  cabe resaltal que si el representante ya no tiene asiganada 
 ninguna asistencia se hace un delete sobre la tabla de asistencias para que no se este guardo registros sin informacion.';
